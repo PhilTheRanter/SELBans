@@ -23,8 +23,8 @@
 	
 	
 	$pageTitle = 'SELBans';
-	$bootstrap = 'http://domsplace.com/Bootstrap/Bootstrap_2_3_2/js/bootstrap.js';
-	$bootstrapCSS = 'http://domsplace.com/Bootstrap/Bootstrap_2_3_2/css/bootstrap.css';
+	$bootstrap = 'http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js';
+	$bootstrapCSS = 'http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css';
 	$jQuery = 'http://domsplace.com/jQuery/jquery-1.9.1.min.js';
 	$minecraftUsernameRegexPHP = '/[^a-z0-9_]/i';
 	$minecraftUsernameRegexJS = '/[^a-z0-9_]/gi';
