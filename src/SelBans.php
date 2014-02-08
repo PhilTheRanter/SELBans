@@ -448,9 +448,7 @@
 		<title><?php echo $pageTitle; ?></title>
 		<meta charset="utf-8" />
 		
-		<!-- Import jQuery(c) From domsPlace -->
 		<script type="text/javascript" src="<?php echo $jQuery; ?>"></script>
-		<!-- Import bootstrap(c) From domsPlace -->
 		<script type="text/javascript" src="<?php echo $bootstrap; ?>"></script>
 		
 		<!-- Global Functions -->
@@ -507,7 +505,7 @@
 			
 			function docLoaded() {
 				if(dbCon != true) {
-					PermError('Error!', 'Failed to connect to the SQL Server.');
+					PermError('Error!', 'Failed to connect to SQL Server, please check your credentials in selbans.php');
 					return;
 				}
 				
@@ -856,7 +854,7 @@
 					return;
 				}
 				
-				element.html('<div class="alert alert-info"><strong>No results.</strong></div>');
+				element.html('<div class="alert alert-info"><strong>No results found. Please try a different search.</strong></div>');
 			}
 			
 			function getModalForPlayer(player) {
