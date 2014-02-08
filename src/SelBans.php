@@ -16,16 +16,14 @@
 		new BanDatabase('localhost', '3306', 'minecraft', 'SELBans', 'root', 'password');	//Change this line to suit your server.
 	}
 	 
-	 
 	/*
 	 * Everything below is optional and only recommended for advanced users:
 	 */
 	
-	
 	$pageTitle = 'SELBans';
-	$bootstrap = 'http://domsplace.com/Bootstrap/Bootstrap_2_3_2/js/bootstrap.js';
-	$bootstrapCSS = 'http://domsplace.com/Bootstrap/Bootstrap_2_3_2/css/bootstrap.css';
-	$jQuery = 'http://domsplace.com/jQuery/jquery-1.9.1.min.js';
+	$bootstrap = 'http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js';
+	$bootstrapCSS = 'http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css';
+	$jQuery = 'https://code.jquery.com/jquery.js';
 	$minecraftUsernameRegexPHP = '/[^a-z0-9_]/i';
 	$minecraftUsernameRegexJS = '/[^a-z0-9_]/gi';
 	
@@ -448,9 +446,7 @@
 		<title><?php echo $pageTitle; ?></title>
 		<meta charset="utf-8" />
 		
-		<!-- Import jQuery(c) From domsPlace -->
 		<script type="text/javascript" src="<?php echo $jQuery; ?>"></script>
-		<!-- Import bootstrap(c) From domsPlace -->
 		<script type="text/javascript" src="<?php echo $bootstrap; ?>"></script>
 		
 		<!-- Global Functions -->
@@ -507,7 +503,7 @@
 			
 			function docLoaded() {
 				if(dbCon != true) {
-					PermError('Error!', 'Failed to connect to the SQL Server.');
+					PermError('Error!', 'Failed to connect to SQL Server, please check your credentials in selbans.php');
 					return;
 				}
 				
@@ -856,7 +852,7 @@
 					return;
 				}
 				
-				element.html('<div class="alert alert-info"><strong>No results.</strong></div>');
+				element.html('<div class="alert alert-info"><strong>No results found. Please try a different search.</strong></div>');
 			}
 			
 			function getModalForPlayer(player) {
@@ -1013,7 +1009,7 @@
 			<footer>
 				<div class="pull-right" style="float: right; clear: both;"><a href="#PageTop">Back to Top</a></div>
 				<a href="http://dev.bukkit.org/bukkit-plugins/selbans/">SELBans</a> Web Interface.<br />
-				Code by <a href="http://domsplace.com/">Dominic Masters</a> and <a href="http://oxafemble.me">Jordan Atkins</a>. This version is specifically for Nicholas Cage!
+				Code by <a href="http://domsplace.com/">Dominic Masters</a> and <a href="http://oxafemble.me">Jordan Atkins</a>.
 			</footer>
 		</div>
 	</body>
