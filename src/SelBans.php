@@ -16,16 +16,14 @@
 		new BanDatabase('localhost', '3306', 'minecraft', 'SELBans', 'root', 'password');	//Change this line to suit your server.
 	}
 	 
-	 
 	/*
 	 * Everything below is optional and only recommended for advanced users:
 	 */
 	
-	
 	$pageTitle = 'SELBans';
 	$bootstrap = 'http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js';
 	$bootstrapCSS = 'http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css';
-	$jQuery = 'http://domsplace.com/jQuery/jquery-1.9.1.min.js';
+	$jQuery = 'https://code.jquery.com/jquery.js';
 	$minecraftUsernameRegexPHP = '/[^a-z0-9_]/i';
 	$minecraftUsernameRegexJS = '/[^a-z0-9_]/gi';
 	
