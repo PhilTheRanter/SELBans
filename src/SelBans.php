@@ -1013,7 +1013,7 @@
 			<footer>
 				<div class="pull-right" style="float: right; clear: both;"><a href="#PageTop">Back to Top</a></div>
 				<a href="http://dev.bukkit.org/bukkit-plugins/selbans/">SELBans</a> Web Interface.<br />
-				Code by <a href="http://domsplace.com/">Dominic Masters</a> and <a href="http://oxafemble.me">Jordan Atkins</a>. This version is specifically for Nicholas Cage!
+				Code by <a href="http://domsplace.com/">Dominic Masters</a> and <a href="http://oxafemble.me">Jordan Atkins</a>.
 			</footer>
 		</div>
 	</body>
